@@ -51,3 +51,7 @@ namespace Library
 
     }
 }
+//Como se podría llegar a provocar cambios como agregar la edad del paciente
+//y llegar a agregar algun otro dato del doctor,
+//No cumpliria con SRP ya que habría mas de un motivo para realizar cambios en la clase 
+//Se podría crear una Clase Doctor y una clase Paciente
