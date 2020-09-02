@@ -6,23 +6,12 @@ namespace Expert_SRP
     {
         public Boolean PuedeComprar(Alfajor a, Double dinero, String moneda) 
         {
-            Double pesos = ConvertirAPesos(dinero, moneda);
-            return pesos >= a.PrecioDulce + a.PrecioMasa;
+            Double pesos = Conversor.ConvertirAPesos(dinero, moneda);
+            return pesos >= Alfajor.Precio(a);
         }
-        private Double ConvertirAPesos(Double dinero, String moneda)
-        {
-            if (moneda.Equals("U$S")) 
-            {
-                return dinero / 30;
-            } 
-            else if (moneda.Equals("$")) 
-            {
-                return dinero;
-            }
-            else 
-            {
-                return -1;
-            }
-        }
+
+        //No cumple con SRP porque tiene mas de una responsabilidad
+        //el total del valor de alfajor sera creado en un metodo en alfajor
+        
     }
 }
