@@ -3,6 +3,9 @@ using System.Text;
 
 namespace Library
 {
+     //Aplicando SRP crearía dos clases más, una con los datos de los Doctores y otra con los datos
+    //de los Pacientes, y aplicando EXPERT haría que AppointmentService le pida la informacion a los 
+    //expertos de la informacion Doctores y Pacientes
     public class AppointmentService
     {
         public static string CreateAppointment(string name, string id, string phoneNumber, DateTime date, string appoinmentPlace, string doctorName)
