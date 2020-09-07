@@ -3,9 +3,10 @@ using System.Text;
 
 namespace Library
 {
-    //Aplicando SRP crearía dos clases más, una con los datos de los Doctores y otra con los datos
-    //de los Pacientes, y aplicando EXPERT haría que AppointmentService le pida la informacion a los 
-    //expertos de la informacion Doctores y Pacientes
+    //Se crean las clases CLIENTE, DOCTOR Y PLACE para que sean los responsables
+    //de los datos de cada uno, en este caso solo validan que no sean nulos
+    //pero podría por ejemplo buscarse en una lista, o base de datos,
+    // y en caso de no encontrarse que se tenga que agregar 
     public class Cliente
     {
         public static bool IsValid(string algo)
