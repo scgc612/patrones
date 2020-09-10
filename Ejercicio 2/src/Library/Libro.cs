@@ -18,11 +18,10 @@ namespace SRP
             this.Codigo = codigo;
         }
 
-        public void AlmacenarLibro(String sector, String estante)
-        {
-            this.SectorBiblioteca = sector;
-            this.EstanteBiblioteca = estante;
-        }
+        //No cumple con SRP porque además de crearse el Libro debe Ubicarse en la biblioteca
+        //No cumple con EXPERT porque no conoce Biblioteca, el experto deberia ser un Objeto biblioteca
+        //se debe crear una clase biblioteca
+        
 
     }
 }
